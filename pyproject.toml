@@ -35,6 +35,11 @@ aiosqlite = "^0.21.0"
 aioboto3 = "^13.4.0"
 pytest-asyncio = "^0.25.3"
 gunicorn = "^23.0.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+mypy = "^1.15.0"
+pre-commit = "^4.2.0"
+flake8-tidy-imports = "^4.11.0"
 
 
 [build-system]

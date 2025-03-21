@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 25.1.0  # black version
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1  # isort version
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0  # flake8 version
+    hooks:
+      - id: flake8
+        args: [--max-line-length=88, --ignore=ANN002,ANN003,ANN101,ANN102,ANN401,E203,E266,E402,E501,F401,N807,N818,VNE001,W503,W504]
+
+#  - repo: https://github.com/pre-commit/mirrors-mypy
+#    rev: 1.15.0  # mypy version
+#    hooks:
+#      - id: mypy
+
+#  - repo: https://github.com/pre-commit/pre-commit-hooks
+#    rev: 4.2.0  # pre-commit-hooks version
+#    hooks:
+#      - id: trailing-whitespace
